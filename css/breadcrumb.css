@@ -1,0 +1,31 @@
+/* Breadcrumb */
+.breadcrumb {
+    margin-bottom: 50px;
+    text-align: center;
+    padding-top: 150px;
+    background-color: #fbfbfb;
+    background-image: url(../images/banner.png);
+    background-size: cover;
+}
+
+.breadcrumb h2 {
+    margin-bottom: 25px;
+}
+
+.breadcrumb a {
+    color: var(--maincolor);
+    font-size: 20px;
+    padding-right: 10px;
+    display: inline-block;
+    margin-bottom: 80px;
+}
+
+.breadcrumb span {
+    color: var(--fontcolor);
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.breadcrumb i {
+    color: var(--fontcolor);
+}

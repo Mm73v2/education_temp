@@ -1,0 +1,77 @@
+/* navbar */
+header.navbar {
+    padding: 15px 25px;
+    display: flex;
+    background-color: #FFF;
+    border-radius: 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px auto;
+    position: fixed;
+    box-shadow: 2px 1px 5px 0 var(--maincolor);
+    z-index: 10;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: 100px;
+    margin-top: -10px;
+}
+
+.logo a img {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.logo a h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 5px;
+    color: #000;
+    transition: color 0.3s ease 0s;
+    display: inline-block;
+}
+
+.logo:hover h2 {
+    color: var(--maincolor);
+}
+
+nav {
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    transition: color 0.3s ease 0s;
+}
+
+nav ul li a:hover {
+    color: var(--maincolor);
+}
+
+.nav-btn {
+    padding: 10px 25px;
+    margin-right: 20px;
+}
+
+header.navbar i {
+    cursor: pointer;
+    transition: color 0.3s ease 0s;
+    margin-top: 10px;
+}
+
+header.navbar i:hover {
+    color: var(--maincolor);
+}
+
+.current {
+    color: var(--maincolor);
+}

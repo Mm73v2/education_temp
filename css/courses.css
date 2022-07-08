@@ -1,0 +1,155 @@
+/* Courses section */
+.courses main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.courses-item {
+    background-color: #fbfbfb;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    width: 32%;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s ease 0s;
+    margin-bottom: 25px;
+}
+
+.courses-item a img {
+    width: 25%;
+    position: absolute;
+    top: 32%;
+    left: 3%;
+}
+
+.courses-item a span, .courses-item a h3, .courses-item a p {
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+
+.courses-item a span {
+    color: var(--maincolor);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.courses-item a h3 {
+    color: #000;
+    margin-top: 5px;
+    transition: color 0.3s ease 0s;
+    text-transform: capitalize;
+}
+
+.courses-item a p.courses-desc {
+    color: var(--fontcolor);
+    line-height: 1.5;
+}
+
+.courses-item:hover {
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.courses-item:hover h3 {
+    color: var(--maincolor);
+}
+
+.courses-item.free {
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Page numbers */
+.pages {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.numbers-list li {
+    display: inline-block;
+}
+
+.numbers-list li a {
+    padding: 15px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 15px;
+    display: inline-block;
+    color: #000;
+    width: 45px;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s ease 0s;
+}
+
+.numbers-list li a.number-hover:hover, #current-page {
+    background-color: var(--maincolor);
+    color: #fff;
+}
+
+#left-bracket {
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* Video section */
+section.video {
+    margin: 0 0 50px 20px;
+}
+
+section.video main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+section.video main .right-side {
+    width: 50%;
+}
+
+section.video main .right-side h2 {
+    text-transform: uppercase;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+section.video main .right-side p {
+    color: var(--fontcolor);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+section.video main .icon {
+    width: 45%;
+    position: relative;
+    perspective: 500px;
+}
+
+section.video main .icon img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+section.video main .icon i {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 18px 10px 10px 15px;
+    border-radius: 50%;
+    line-height: 40px;
+    animation: ripple 1s linear infinite;
+    border: 3px solid #fff;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    display: inline-block;
+}
+

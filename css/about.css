@@ -1,0 +1,341 @@
+/* Welcome section */
+section.welcome main {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+section.welcome main img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+section.welcome main .left-side {
+    width: 50%;
+    overflow: hidden;
+}
+
+section.welcome main .s-head {
+    color:#000;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transform: translate(15px,-35px);
+}
+
+section.welcome main .line {
+    width: 2px;
+    height: 50px;
+    background-color: var(--maincolor);
+}
+
+section.welcome main .left-side h2 {
+    text-transform: capitalize;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section.welcome main .left-side h2 span {
+    font-weight: 300;
+}
+
+section.welcome main .left-side .desc {
+    color: var(--fontcolor);
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.about-btn {
+    padding: 15px 35px;
+    font-size: 17px;
+}
+
+.about-btn i {
+    background: rgb(255 255 255 / 18%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 25px;
+    margin-left: 5px;
+}
+
+/* Services section */
+section.services {
+    background-color: #fbfbfb;
+    margin-bottom: 50px;
+    padding: 50px 0;
+}
+
+section.services main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.services-item {
+    width: 30%;
+}
+
+section.services main .services-head {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: var(--fontcolor);
+    text-transform: uppercase;
+}
+
+section.services main p span  {
+    color: var(--maincolor);
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+section.services main h3 {
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+section.services main .desc {
+    color: var(--fontcolor);
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Number section */
+section.number {
+    margin: 0 0 80px 10px;
+}
+
+section.number main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+section.number main .number-item {
+    width: 20%;
+    text-align: center;
+}
+
+section.number main .number-item img {
+    margin-bottom: 10px;
+}
+
+section.number main .number-item p {
+    font-size: 40px;
+    color: var(--maincolor);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+section.number main .number-item h3 {
+    text-transform: uppercase;
+}
+
+/* Video section */
+section.video {
+    margin: 0 0 50px 20px;
+}
+
+section.video main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+section.video main .right-side {
+    width: 50%;
+}
+
+section.video main .right-side h2 {
+    text-transform: uppercase;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+section.video main .right-side p {
+    color: var(--fontcolor);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+section.video main .icon {
+    width: 45%;
+    position: relative;
+    perspective: 500px;
+}
+
+section.video main .icon img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+section.video main .icon i {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 18px 10px 10px 15px;
+    border-radius: 50%;
+    line-height: 40px;
+    animation: ripple 1s linear infinite;
+    border: 3px solid #fff;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    display: inline-block;
+}
+
+/* Testimonial section */
+section.testimonial {
+    background-color: #fbfbfb;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section.testimonial:active {
+    cursor: pointer;
+}
+
+.testimonial header {
+    padding-top: 20px;
+}
+
+.testimonial header h2 {
+    text-transform: uppercase;
+    font-size: 38px;
+    margin-bottom: 50px;
+}
+
+.testimonial-content {
+    position: relative;
+}
+
+.testimonial-content img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-content h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.testimonial-content span {
+    display: inline-block;
+    color: var(--maincolor);
+    margin-bottom: 30px;
+}
+
+.testimonial blockquote {
+    color: var(--fontcolor);
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.testimonial .dots {
+    display: inline-block;
+    width: 12px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #dedede;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+
+.testimonial .dots:hover {
+    background-color: var(--maincolor);
+}
+
+.dots.current {
+    background-color: var(--maincolor);
+}
+
+.testimonial i {
+    color: #EEE;
+    position: absolute;
+    left: 250px;
+    font-size: 130px;
+}
+
+/* Blog section */
+.blog header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.blog header h2 {
+    font-size: 38px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.blog header p {
+    color: var(--fontcolor);
+    line-height: 1.5;
+    font-size: 17px;
+}
+
+.blog main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.blog-item {
+    width: 32%;
+    border: 1px solid #EEE;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s ease 0s;
+}
+
+.blog-item img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.blog-item span {
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.blog-item h3 {
+    color: #000;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    transition: color 0.3s ease 0s;
+}
+
+.blog-item p {
+    color: var(--fontcolor);
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.blog-item-info {
+    padding: 20px 30px;
+}
+
+.blog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: -1px 8px 5px 0 rgb(0 0 0 / 30%);
+}
+
+.blog-item:hover h3 {
+    color: var(--maincolor);
+}
